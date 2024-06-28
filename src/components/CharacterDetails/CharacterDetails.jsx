@@ -22,11 +22,11 @@ function CharacterDetails() {
 
   const toggleFavorite = () => {
     if (isFavorite) {
-      removeFavorite(character); // Remove from favorites
+      removeFavorite(character);
       setIsFavorite(false);
       localStorage.removeItem(`favorite-${character.id}`);
     } else {
-      addFavorite(character); // Add to favorites
+      addFavorite(character);
       setIsFavorite(true);
       localStorage.setItem(`favorite-${character.id}`, "true");
     }
